@@ -790,8 +790,10 @@ body {
     display: block;
   }
 
-  .footer__form {
+  .footer .footer-form {
     margin-top: 23px;
+    max-width: 100%;
+    width: 100%;
   }
   .footer .footer-form .footer-form__title {
     font-size: 16px;
