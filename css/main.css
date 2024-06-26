@@ -469,6 +469,9 @@
   .banner .banner__wrapper {
     padding: 25px 8px;
   }
+  .banner .banner__title {
+    margin-top: 0;
+  }
 
   .projects #projects-modal {
     height: fit-content;
