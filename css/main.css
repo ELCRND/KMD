@@ -477,6 +477,9 @@
     margin-top: 0;
   }
 
+  .projects {
+    padding-top: 60px;
+  }
   .projects #projects-modal {
     height: fit-content;
     padding: 25px 10px;

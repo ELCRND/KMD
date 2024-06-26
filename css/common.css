@@ -303,6 +303,7 @@ body:has(dialog[open]) {
 /* MOBILE */
 @media screen and (max-width: 768px) {
   .footer {
+    margin-top: 80px;
     padding-top: 10px;
     padding-bottom: 20px;
   }

@@ -22,6 +22,9 @@
 .projects__text {
   max-width: 383px;
   margin-left: 260px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
   vertical-align: bottom;
   display: inline-block;
 }
@@ -381,15 +384,20 @@
     flex-direction: column;
   }
   .projects__text {
-    display: none;
+    margin-top: 15px;
+    margin-left: 0;
   }
 }
 @media screen and (max-width: 768px) {
+  .projects {
+    padding-top: 10px;
+  }
   .projects #projects-modal {
     height: fit-content;
     padding: 25px 10px;
   }
   .projects__gallery-toggle.toggler {
+    margin-top: 15px;
     flex-direction: column;
     align-items: start;
     gap: 10px;

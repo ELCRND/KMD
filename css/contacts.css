@@ -66,6 +66,15 @@
 }
 
 @media screen and (max-width: 768px) {
+  .contacts {
+    padding-top: 10px;
+  }
+  .contacts .contacts__bread-crumbs {
+    margin-bottom: 10px;
+  }
+  .contacts__map {
+    margin-top: 15px;
+  }
   .contacts__map .map-info {
     position: static;
     margin-bottom: 20px;
