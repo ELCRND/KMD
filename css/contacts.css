@@ -72,4 +72,10 @@
     margin-left: auto;
     margin-right: auto;
   }
+
+  .organization-info {
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    gap: 10px;
+  }
 }

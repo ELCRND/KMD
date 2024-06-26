@@ -427,11 +427,13 @@
 /* MOBILE */
 @media screen and (max-width: 768px) {
   .hero .hero__title {
+    font-family: var(--second-family);
     font-size: 48px;
   }
   .hero .hero__subtitle {
     margin: 0;
     display: block;
+    font-family: var(--second-family);
     font-size: 48px;
   }
   .hero .hero__text {

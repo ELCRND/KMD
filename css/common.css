@@ -12,7 +12,7 @@
 }
 
 body {
-  font-family: Arial, sans-serif;
+  font-family: var(--font-family);
   color: var(--main-text);
 }
 body:has(dialog[open]) {
