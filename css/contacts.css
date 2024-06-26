@@ -1,0 +1,75 @@
+.contacts {
+  padding-top: 36px;
+}
+
+.contacts .contacts__bread-crumbs {
+  margin-bottom: 20px;
+  color: #303030;
+}
+.contacts__bread-crumbs a {
+  color: var(--gray-color);
+}
+
+.contacts .contacts__title {
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 36px;
+  line-height: 140%;
+  color: var(--title-color);
+}
+
+.contacts__map {
+  margin-top: 50px;
+  border-radius: 10px;
+  overflow: hidden;
+  position: relative;
+}
+
+.contacts__map .map-info {
+  max-width: 337px;
+  padding: 20px 15px;
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+  position: absolute;
+  top: 90px;
+  left: 60px;
+  border-radius: 10px;
+  background: #f8f7f7;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #303030;
+}
+
+.map-info > div > span {
+  margin-bottom: 10px;
+  display: block;
+  color: #d9d9d9;
+}
+
+.hours > div > span {
+  display: block;
+}
+
+.organization-info {
+  margin-top: 20px;
+  display: grid;
+  row-gap: 5px;
+  column-gap: 196px;
+  grid-template-rows: auto auto;
+  grid-template-columns: max-content max-content;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: #303030;
+}
+
+@media screen and (max-width: 768px) {
+  .contacts__map .map-info {
+    position: static;
+    margin-bottom: 20px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
