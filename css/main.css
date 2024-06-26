@@ -121,7 +121,7 @@
 }
 
 .banner__form .form__text {
-  font-weight: 400;
+  font-weight: 600;
   font-size: 16px;
   line-height: 140%;
   color: #303030;
@@ -175,6 +175,9 @@
   margin-left: 260px;
   vertical-align: bottom;
   display: inline-block;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
 }
 
 .projects .projects__gallery {
