@@ -68,7 +68,7 @@
 .about .about__description {
   margin-top: 20px;
   font-weight: 400;
-  font-size: 16px;
+  font-size: 18px;
   line-height: 140%;
   color: var(--main-text);
 }
@@ -123,8 +123,8 @@
 }
 
 .banner__form .form__text {
-  font-weight: 600;
-  font-size: 16px;
+  font-weight: 400;
+  font-size: 18px;
   line-height: 140%;
   color: #303030;
 }
