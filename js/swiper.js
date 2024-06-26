@@ -4,6 +4,8 @@ const swiper = new Swiper(".swiper-project", {
   loop: true,
   slidesPerView: 1,
   spaceBetween: 50,
+  centeredSlides: true,
+  centeredSlidesBounds: true,
 
   navigation: {
     nextEl: ".swiper-project-button-next",

@@ -87,6 +87,9 @@
 .advantages__item .advantage__title::after {
   content: "00" counter(advantage-count);
   color: #303030;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
   position: absolute;
   right: 0;
 }

@@ -12,23 +12,17 @@
 }
 
 body {
-  font-family: "Arial", sans-serif;
+  font-family: Arial, sans-serif;
   color: var(--main-text);
+}
+body:has(dialog[open]) {
+  overflow: hidden;
 }
 
 .container {
   width: min(1170px, 100%);
   margin-left: auto;
   margin-right: auto;
-}
-
-.body-overflow {
-  overflow: hidden;
-}
-@media screen and (max-width: 1920px) {
-  .body-overflow {
-    margin-right: 17px;
-  }
 }
 
 /* HEADER */
@@ -183,7 +177,7 @@ body {
   padding-top: 8px;
   display: flex;
   flex-direction: column;
-  gap: 25px;
+  gap: 15px;
 }
 
 .footer .footer__contacts .footer__logo {
@@ -203,6 +197,7 @@ body {
 
 .footer .footer-form .footer-form__title {
   max-width: 400px;
+  margin-bottom: 15px;
   font-family: var(--second-family);
   font-weight: 400;
   font-size: 24px;
@@ -219,10 +214,21 @@ body {
   border: 1px solid #d9d9d9;
   border-radius: 10px;
 }
+.footer .footer__location address {
+  max-width: 189px;
+  font-size: 14px;
+  line-height: 140%;
+}
+
+.footer .footer__socials,
+.footer .footer__phone,
+.footer .footer__hours {
+  color: #d9d9d9;
+}
 
 .footer-form__name input::placeholder,
 .footer-form__phone input::placeholder {
-  color: var(--white-color);
+  color: #d9d9d9;
 }
 
 .footer-form .footer-form__submit {
@@ -235,6 +241,7 @@ body {
 
 .footer-form .footer-form__privacy {
   max-width: 270px;
+  margin-top: 10px;
   display: inline-block;
   font-family: var(--font-family);
   font-weight: 400;
@@ -247,7 +254,7 @@ body {
   padding-left: 17px;
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 26px;
 }
 
 .footer .footer__bottom {
@@ -266,8 +273,8 @@ body {
 
 @media screen and (max-width: 1180px) {
   .container {
-    padding-left: 8px;
-    padding-right: 8px;
+    padding-left: 10px;
+    padding-right: 10px;
   }
 
   .header {
@@ -307,6 +314,7 @@ body {
     max-width: 100%;
     display: grid;
     grid-template-columns: auto auto;
+    gap: 0;
   }
   .footer .footer__hours {
     display: flex;
@@ -322,8 +330,15 @@ body {
     grid-column: 1 / 2;
   }
   .footer__socials {
+    grid-row: 2 / 3;
     flex-direction: column;
     align-items: end;
+  }
+  .footer__hours {
+    grid-row: 2 / 3;
+  }
+  .footer__phone {
+    margin-top: 15px;
   }
   .footer .footer__contacts .footer__logo {
     min-width: 105px;
@@ -355,6 +370,7 @@ body {
     gap: 10px;
   }
   .footer__bottom .footer__agreement {
+    max-width: 192px;
     margin: 0;
   }
 }
