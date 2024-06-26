@@ -352,10 +352,15 @@
     display: none;
   }
 }
-@media screen and (max-width: 768) {
+@media screen and (max-width: 768px) {
   .projects #projects-modal {
     height: fit-content;
     padding: 25px 10px;
+  }
+  .projects__gallery-toggle.toggler {
+    flex-direction: column;
+    align-items: start;
+    gap: 10px;
   }
 
   .swiper-project-button-prev {
