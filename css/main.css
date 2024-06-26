@@ -431,6 +431,9 @@
 
 /* MOBILE */
 @media screen and (max-width: 768px) {
+  .hero {
+    padding-top: 10px;
+  }
   .hero .hero__title {
     font-family: var(--second-family);
     font-size: 48px;
