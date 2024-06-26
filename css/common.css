@@ -18,6 +18,11 @@ body {
 body:has(dialog[open]) {
   overflow: hidden;
 }
+@media screen and (min-width: 1440px) {
+  body:has(dialog[open]) {
+    padding-right: 17px;
+  }
+}
 
 .container {
   width: min(1170px, 100%);
@@ -251,7 +256,6 @@ body:has(dialog[open]) {
 }
 
 .footer .footer__navigation ol {
-  padding-left: 17px;
   display: flex;
   flex-direction: column;
   gap: 26px;

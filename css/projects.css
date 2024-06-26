@@ -79,6 +79,7 @@
   height: 100%;
   max-height: 100%;
   padding-bottom: 20px;
+  border-radius: 10px;
   background-color: #fff;
 }
 .projects #projects-modal .modal__content {
@@ -115,7 +116,7 @@
 }
 
 .projects #projects-modal .modal-form {
-  margin-top: 20px;
+  margin-top: 15px;
 }
 
 .modal-form .modal-form__title {
@@ -194,6 +195,8 @@
 }
 .swiper-project .swiper-slide {
   min-width: 100%;
+  display: flex;
+  justify-content: center;
 }
 .swiper-project-button-prev,
 .swiper-project-button-next {
@@ -415,5 +418,20 @@
   }
   .call #call-modal {
     padding: 25px 10px;
+  }
+
+  .projects #projects-modal .modal__wrapper {
+    padding: 25px 10px 20px 10px;
+  }
+  .projects #projects-modal .modal__title {
+    margin-top: 20px;
+    margin-bottom: 5px;
+    font-size: 20px;
+    line-height: 164%;
+  }
+
+  .modal-form .modal-form__title {
+    font-size: 20px;
+    line-height: 140%;
   }
 }
