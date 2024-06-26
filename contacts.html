@@ -7,11 +7,10 @@
     <title>Document</title>
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/common.css">
-    <link rel="stylesheet" href="css/main.css">
+    <link rel="stylesheet" href="css/contacts.css">
 </head>
 
 <body>
-
     <!-- HEADER -->
     <header class="header container">
         <div class="header__logo">
@@ -90,9 +89,9 @@
 
         <div class="header__menu hidden">
             <ol class="header__menu-list">
-                <li class="header__menu-item"><a href="about.html" class="navigation__link">О компании</a></li>
+                <li class="header__menu-item"><a href="#" class="navigation__link">О компании</a></li>
                 <li class="header__menu-item"><a href="projects.html" class="navigation__link">Проекты</a></li>
-                <li class="header__menu-item"><a href="contacts.html" class="navigation__link">Контакты</a></li>
+                <li class="header__menu-item"><a href="#" class="navigation__link">Контакты</a></li>
             </ol>
             <button type="button" class="header__menu-btn-close">
                 <div></div>
@@ -107,182 +106,17 @@
         </button>
     </header>
 
-    <!-- HERO -->
-    <section class="hero">
+
+    <!-- CONTACTS -->
+    <section class="contacts">
         <div class="container">
-            <h1 class="hero__title">Мебель на заказ</h1>
-            <h2 class="hero__subtitle">в Дмитрове</h2>
-            <span class="hero__text">Изготовление корпусной мебели по вашим размерам</span>
-            <div class="hero__image">
-                <img src="public/img/main/hero/hero_img.png" alt="" width="1160" height="420">
-                <button type="button">Кнопка</button>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- ABOUT -->
-    <section class="about">
-        <div class="container">
-            <div class="about__wrapper">
-                <img class="about__image" src="public/img/main/about/about_img.png" alt="" width="660"
-                    height="340"></img>
-                <div>
-                    <h2 class="about__title">О компании</h2>
-                    <p class="about__description">Корпусная мебель на заказ по индивидуальным размерам,
-                        любой сложности и уникальным пожеланиям заказчика</p>
-                    <p class="about__description">Корпусная мебель на заказ по индивидуальным размерам,
-                        любой сложности и уникальным пожеланиям заказчика</p>
-                    <button type="button" class="about__btn">Подробнее</button>
-                </div>
-            </div>
-            </container>
-    </section>
-
-
-    <!-- BANNER -->
-    <section class="banner">
-        <div class="container">
-            <div class="banner__wrapper">
-
-                <div>
-                    <h2 class="banner__title">Дизайн проект мебели - это не просто красивая картинка из интернета,
-                        мы создаем индивидуальные заказы</h2>
-                    <span class="banner__text">Корпусная мебель на заказ по индивидуальным размерам, любой сложности и
-                        уникальным</span>
-                </div>
-
-                <form onsubmit="return false;" class="banner__form form">
-                    <span class="form__text">Отправить заявку на разработку индивидуального дизайн-проекта</span>
-                    <label class="form__name">
-                        <input type="text" placeholder="Имя" required id="banner-form-name">
-                    </label>
-                    <label class="form__phone">
-                        <input type="tel" placeholder="Номер телефона" required id="banner-form-phone">
-                    </label>
-                    <button class="form__submit">Кнопка</button>
-                    <a href="#" class="form__privacy">Нажимамая на кнопку, вы соглашаетесь с политикой
-                        конфиденциальности
-                    </a>
-                </form>
-            </div>
-        </div>
-    </section>
-
-
-    <!-- PROJECTS -->
-    <section class="projects">
-        <div class="container">
-            <h2 class="projects__title">Проекты</h2>
-            <span class="projects__text">Изготовление корпусной мебели по вашим размерам</span>
-
-            <div class="projects__gallery gallery">
-                <div>
-                    <button type="button" class="gallery__item project">
-                        <picture>
-                            <source srcset="public/img/main/projects/project_1.png" media="(min-width: 320px)">
-                            <img src="public/img/main/projects/project_mobile.png" alt="" class="project__img"
-                                width="400" height="490">
-                        </picture>
-                    </button>
-                    <button type="button" class="gallery__item project">
-                        <picture>
-                            <source srcset="public/img/main/projects/project_2.png" media="(min-width: 320px)">
-                            <img src="public/img/main/projects/project_mobile.png" alt="" class="project__img"
-                                width="400" height="490">
-                        </picture>
-                    </button>
-                    <button type="button" class="gallery__item project">
-                        <picture>
-                            <source srcset="public/img/main/projects/project_3.png" media="(min-width: 320px)">
-                            <img src="public/img/main/projects/project_mobile.png" alt="" class="project__img"
-                                width="400" height="490">
-                        </picture>
-                    </button>
-                    <a href="projects.html" class="gallery__btn">Смотреть все проекты</a>
-                </div>
-                <div>
-                    <button type="button" class="gallery__item project">
-                        <img src="public/img/main/projects/project_4.png" alt="" class="project__img" width="745"
-                            height="275">
-                    </button>
-                    <button type="button" class="gallery__item project">
-                        <img src="public/img/main/projects/project_5.png" alt="" class="project__img" width="745"
-                            height="275">
-                    </button>
-                    <button type="button" class="gallery__item project">
-                        <img src="public/img/main/projects/project_6.png" alt="" class="project__img" width="745"
-                            height="645">
-                    </button>
-                </div>
-                <dialog id="projects-modal" class="projects__modal modal" close>
-                    <div class="modal__wrapper">
-
-                        <div class="swiper-project">
-
-                            <div class="swiper-wrapper">
-                                <div class="swiper-slide">
-                                    <div>
-                                        <picture>
-                                            <source srcset="public/img/main/projects/project_5.png"
-                                                media="(min-width: 768px)">
-                                            <img src="public/img/main/projects/project_mobile.png" alt="">
-                                        </picture>
-                                    </div>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="public/img/main/projects/project_5.png"
-                                            media="(min-width: 768px)">
-                                        <img src="public/img/main/projects/project_mobile.png" alt="">
-                                    </picture>
-                                </div>
-                                <div class="swiper-slide">
-                                    <picture>
-                                        <source srcset="public/img/main/projects/project_5.png"
-                                            media="(min-width: 768px)">
-                                        <img src="public/img/main/projects/project_mobile.png" alt="">
-                                    </picture>
-                                </div>
-                            </div>
-
-                            <div class="swiper-project-button-prev"></div>
-                            <div class="swiper-project-button-next"></div>
-                        </div>
-
-                        <div class="modal__content">
-                            <h3 class="modal__title">Название проекта</h3>
-                            <h4 class="modal__subtitle">Описание проекта, Описание проекта, Описание проекта, Описание
-                                проекта
-                            </h4>
-                            <div class="modal__description">
-                                <p>Описание проекта</p>
-                                <p>Описание проекта</p>
-                                <p>Описание проекта</p>
-                            </div>
-
-                            <form onsubmit="return false;" class="modal-form">
-                                <h3 class="modal-form__title"></h3>
-                                <label class="modal-form__name">
-                                    <input type="text" placeholder="Имя" required id="modal-form-name">
-                                </label>
-                                <label class="modal-form__phone">
-                                    <input type="tel" placeholder="Номер телефона" required id="modal-form-phone">
-                                </label>
-                                <button class="modal-form__submit">Отправить</button>
-                                <a href="#" class="modal-form__privacy">Нажимамая на кнопку, вы соглашаетесь с политикой
-                                    конфиденциальности
-                                </a>
-                            </form>
-                        </div>
-                    </div>
-                    <button class="modal__close-btn">
-                        <div></div>
-                        <div></div>
-                    </button>
-                </dialog>
+            <div class="contacts__bread-crumbs">
+                <a href="/index.html">Главная</a>
+                <span>/</span>
+                <span>Контакты</span>
             </div>
 
+            <h1 class="contacts__title">Контакты</h1>
         </div>
     </section>
 
@@ -371,10 +205,10 @@
                         <br> и выберем подходящее решение
                     </h2>
                     <label class="footer-form__name">
-                        <input type="text" placeholder="Имя" required id="footer-form-name">
+                        <input type="text" placeholder="Имя" id="footer-form-name" required>
                     </label>
                     <label class="footer-form__phone">
-                        <input type="tel" placeholder="Номер телефона" required id="footer-form-phone">
+                        <input type="tel" placeholder="Номер телефона" id="footer-form-phone" required>
                     </label>
 
                     <button class="footer-form__submit">Отправить</button>
@@ -457,9 +291,7 @@
         </div>
     </footer>
 
-    <script src="js/swiper.js" type="module" defer></script>
     <script src="js/headerMenu.js"></script>
-    <script src="js/main.js"></script>
 </body>
 
 </html>

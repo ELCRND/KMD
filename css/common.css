@@ -1,0 +1,350 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display:ital@0;1&display=swap");
+
+:root {
+  --font-family: "Arial", sans-serif;
+  --second-family: "DM Serif Display", sans-serif;
+  --third-family: "Helvetica", sans-serif;
+
+  --main-text: #303030;
+  --gray-color: #868a90;
+  --white-color: #f1f1f1;
+  --accent-color: #89c540;
+  --title-color: #161616;
+}
+
+body {
+  font-family: "Arial", sans-serif;
+  color: var(--main-text);
+}
+
+.container {
+  width: min(1170px, 100%);
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.body-overflow {
+  overflow: hidden;
+}
+@media screen and (max-width: 1920px) {
+  .body-overflow {
+    margin-right: 17px;
+  }
+}
+
+/* HEADER */
+
+.header {
+  padding-top: 40px;
+  display: flex;
+  align-items: center;
+}
+
+.header .header__location {
+  max-width: 179px;
+  font-size: 14px;
+  font-weight: 400;
+  line-height: 140%;
+}
+
+.header .header__navigation .navigation__list {
+  margin-left: 120px;
+  margin-right: 55px;
+  display: flex;
+  gap: 55px;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+
+.header .header__call-request {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+}
+.call-request__btn {
+  text-decoration: underline;
+}
+
+.header .header__whatsapp-btn {
+  width: 200px;
+  height: 50px;
+  margin-left: 40px;
+  border: 1px solid var(--accent-color);
+  border-radius: 10px;
+  font-family: var(--second-family);
+}
+
+.header .header__menu {
+  width: min(320px, 100%);
+  height: 100%;
+  padding: 20px;
+  border-radius: 0 20px 20px 0;
+  position: absolute;
+  top: 0;
+  left: -320px;
+  z-index: 20;
+  background-color: var(--gray-color);
+  color: var(--white-color);
+}
+
+.header .header__menu.visible {
+  display: block;
+  animation: menuShow 250ms linear forwards;
+}
+.header .header__menu.hidden {
+  display: none;
+  animation: menuClose 250ms linear forwards;
+}
+@keyframes menuShow {
+  from {
+    left: -320px;
+  }
+  to {
+    left: 0;
+  }
+}
+@keyframes menuClose {
+  from {
+    display: block;
+    left: 0;
+  }
+  to {
+    left: -320px;
+    display: none;
+  }
+}
+
+.header .header__menu .header__menu-list {
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.header__menu-btn-open {
+  width: 20px;
+  position: relative;
+  display: none;
+  flex-direction: column;
+  gap: 4px;
+}
+.header__menu-btn-open.hidden {
+  display: none;
+}
+
+.header__menu-btn-open div {
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background-color: #303030;
+  rotate: 0;
+  transition: rotate 150ms ease;
+}
+
+.header__menu-btn-close {
+  width: 20px;
+  position: absolute;
+  top: 25px;
+  right: 25px;
+  flex-direction: column;
+  gap: 4px;
+}
+
+.header__menu-btn-close div {
+  width: 100%;
+  height: 1px;
+  border-radius: 5px;
+  background-color: var(--white-color);
+  transition: rotate 150ms ease;
+  position: absolute;
+}
+.header__menu-btn-close div:first-of-type {
+  rotate: 45deg;
+}
+.header__menu-btn-close div:last-of-type {
+  rotate: -45deg;
+}
+
+/* FOOTER */
+.footer {
+  margin-top: 120px;
+  padding-top: 40px;
+  padding-bottom: 40px;
+  background-color: var(--gray-color);
+  line-height: 140%;
+  color: var(--white-color);
+}
+
+.footer .footer__top {
+  display: flex;
+}
+
+.footer .footer__contacts {
+  max-width: 200px;
+  padding-top: 8px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.footer .footer__contacts .footer__logo {
+  display: none;
+}
+
+.footer .footer__contacts .footer__socials {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer .footer-form {
+  max-width: 400px;
+  margin-left: 200px;
+  margin-right: auto;
+}
+
+.footer .footer-form .footer-form__title {
+  max-width: 400px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 130%;
+  vertical-align: top;
+}
+
+.footer .footer-form .footer-form__name,
+.footer .footer-form .footer-form__phone {
+  width: 100%;
+  margin-top: 10px;
+  display: block;
+  padding: 19px 15px;
+  border: 1px solid #d9d9d9;
+  border-radius: 10px;
+}
+
+.footer-form__name input::placeholder,
+.footer-form__phone input::placeholder {
+  color: var(--white-color);
+}
+
+.footer-form .footer-form__submit {
+  width: 100%;
+  height: 60px;
+  margin-top: 15px;
+  border-radius: 10px;
+  background-color: var(--accent-color);
+}
+
+.footer-form .footer-form__privacy {
+  max-width: 270px;
+  display: inline-block;
+  font-family: var(--font-family);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 140%;
+  color: #d9d9d9;
+}
+
+.footer .footer__navigation ol {
+  padding-left: 17px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.footer .footer__bottom {
+  margin-top: 26px;
+  display: flex;
+  padding-top: 15px;
+  border-top: 1px solid #d9d9d9;
+  font-size: 14px;
+  color: #d9d9d9;
+}
+
+.footer__bottom .footer__agreement {
+  margin-left: 192px;
+  margin-right: auto;
+}
+
+@media screen and (max-width: 1180px) {
+  .container {
+    padding-left: 8px;
+    padding-right: 8px;
+  }
+
+  .header {
+    padding-top: 0;
+    justify-content: space-between;
+  }
+  .header .header__location,
+  .header .header__navigation,
+  .header .header__call-request,
+  .header .header__whatsapp-btn {
+    display: none;
+  }
+  .header__menu-btn-open {
+    display: flex;
+  }
+
+  .footer .footer-form {
+    margin-left: 40px;
+  }
+}
+
+/* MOBILE */
+@media screen and (max-width: 768px) {
+  .footer {
+    padding-top: 10px;
+    padding-bottom: 20px;
+  }
+  .footer .footer__top,
+  .footer .footer__bottom {
+    display: grid;
+    grid-template-rows: auto auto auto;
+  }
+  .footer .footer-form {
+    margin-left: 0;
+  }
+  .footer .footer__contacts {
+    max-width: 100%;
+  }
+  .footer .footer__hours {
+    display: flex;
+    flex-direction: column;
+  }
+  .footer__location {
+    display: flex;
+    align-items: center;
+  }
+  .footer .footer__contacts .footer__logo {
+    min-width: 105px;
+    display: block;
+  }
+  .footer .footer-form {
+    margin-top: 23px;
+    max-width: 100%;
+    width: 100%;
+  }
+  .footer .footer-form .footer-form__title {
+    font-size: 16px;
+    line-height: 140%;
+  }
+  .footer__navigation {
+    margin-top: 20px;
+    grid-row: 2 / 3;
+  }
+  .footer .footer__navigation ol {
+    flex-direction: row;
+    padding: 0;
+  }
+  .footer__navigation .footer__logo {
+    display: none;
+  }
+  .footer__bottom {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+  }
+  .footer__bottom .footer__agreement {
+    margin: 0;
+  }
+}
