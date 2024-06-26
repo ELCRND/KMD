@@ -338,7 +338,7 @@ body {
   padding: 50px 30px 50px 57px;
   display: grid;
   grid-template-columns: auto 350px;
-  background-image: url("../public/img/banner/banner_bg.png");
+  background-image: url("/public/img/banner/banner_bg.png");
   background-repeat: no-repeat;
 }
 
