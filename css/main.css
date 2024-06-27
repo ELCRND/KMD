@@ -75,10 +75,18 @@
 
 .about .about__btn {
   width: min(360px, 100%);
+  display: flex;
+  justify-content: center;
+  align-items: center;
   height: 50px;
   margin-top: 87px;
   border: 1px solid var(--accent-color);
   border-radius: 10px;
+  font-family: var(--second-family);
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 140%;
+  color: var(--main-text);
 }
 
 /* BANNER */
@@ -471,6 +479,8 @@
   }
   .about .about__btn {
     margin-top: 15px;
+    margin-left: auto;
+    margin-right: auto;
   }
 
   .banner .banner__wrapper {
