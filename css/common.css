@@ -80,37 +80,17 @@ body:has(dialog[open]) {
   border-radius: 0 20px 20px 0;
   position: absolute;
   top: 0;
-  left: -320px;
   z-index: 20;
   background-color: var(--gray-color);
   color: var(--white-color);
+  transition: left 0.4s linear;
 }
 
 .header .header__menu.visible {
-  display: block;
-  animation: menuShow 250ms linear forwards;
+  left: 0;
 }
 .header .header__menu.hidden {
-  display: none;
-  animation: menuClose 250ms linear forwards;
-}
-@keyframes menuShow {
-  from {
-    left: -320px;
-  }
-  to {
-    left: 0;
-  }
-}
-@keyframes menuClose {
-  from {
-    display: block;
-    left: 0;
-  }
-  to {
-    left: -320px;
-    display: none;
-  }
+  left: -320px;
 }
 
 .header .header__menu .header__menu-list {

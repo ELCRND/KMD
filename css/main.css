@@ -215,6 +215,9 @@
   outline: none;
   background-color: transparent;
 }
+.projects #projects-modal::-webkit-scrollbar {
+  width: 12px;
+}
 .projects #projects-modal::backdrop {
   background-color: rgba(241, 241, 241, 0.8);
 }
