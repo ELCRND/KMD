@@ -8,9 +8,6 @@ toggleBtns.forEach((btn) =>
   })
 );
 
-// Закрытие модалки через escape
-projectsModal.addEventListener("cancel", () => {});
-
 // Закрытие модалки через кнопку
 document
   .querySelector(".modal-project__close-btn")

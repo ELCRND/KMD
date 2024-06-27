@@ -1,8 +1,5 @@
 const callModal = document.querySelector("#call-modal");
 
-// Закрытие модалки через escape
-callModal.addEventListener("cancel", () => {});
-
 // Закрытие модалки через кнопку
 document.querySelector(".modal__close-btn").addEventListener("click", () => {
   callModal.close();
